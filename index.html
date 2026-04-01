@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReSource Pro — Carrier NCA Sales Executive Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <div class="header-left">
+        <button class="header-home-btn" onclick="navigateTo('overview')">
+          <img src="images/logo.png" alt="ReSource Pro" class="header-logo">
+          <div class="header-divider"></div>
+          <div class="header-title-group">
+            <h1 class="header-title">Carrier NCA Sales Executive Dashboard</h1>
+            <span class="header-subtitle">Intelligence & Outreach Center</span>
+          </div>
+        </button>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-link active" data-page="overview" onclick="navigateTo('overview')">
+          <i data-lucide="layout-dashboard"></i> Overview
+        </button>
+        <button class="nav-link" data-page="prospects" onclick="navigateTo('prospects')">
+          <i data-lucide="users"></i> Prospects
+        </button>
+        <button class="nav-link" data-page="commitments" onclick="navigateTo('commitments')">
+          <i data-lucide="check-circle"></i> Commitments
+        </button>
+      </nav>
+      <div class="header-actions">
+        <div class="header-meta">
+          <i data-lucide="calendar"></i>
+          <span id="currentDate"></span>
+        </div>
+        <button class="btn-header" onclick="refreshDashboard()" title="Refresh">
+          <i data-lucide="refresh-cw"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+    <!-- Overview Page -->
+    <div id="page-overview" class="page active">
+      <div class="summary-banner">
+        <h2>Your Sales Intelligence Command Center</h2>
+        <div class="summary-stats">
+          <div class="stat-card">
+            <div class="stat-value">8</div>
+            <div class="stat-label">Target Accounts</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value green">4</div>
+            <div class="stat-label">High Priority</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">23</div>
+            <div class="stat-label">Trigger Events</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">8</div>
+            <div class="stat-label">Outreach Drafts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Split Layout: Opportunities (left 3/4) + Calendar (right 1/4) -->
+      <div class="split-layout">
+        <div class="split-main">
+          <div class="section-header">
+            <h2>Top Opportunities</h2>
+            <p class="section-description">High-priority accounts with recent trigger events</p>
+          </div>
+          <div class="opportunities-grid" id="opportunitiesGrid"></div>
+          <div class="quick-actions">
+            <button class="btn-primary" onclick="navigateTo('prospects')">
+              <i data-lucide="arrow-right"></i> View All Prospects
+            </button>
+          </div>
+        </div>
+
+        <div class="split-sidebar">
+          <div class="calendar-widget">
+            <div class="calendar-header">
+              <button class="calendar-nav-btn" onclick="changeMonth(-1)">
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <h3 id="calendarMonthYear"></h3>
+              <button class="calendar-nav-btn" onclick="changeMonth(1)">
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+            <div class="calendar-weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-days" id="calendarDays"></div>
+            <div class="calendar-footer">
+              <button class="btn-calendar-sync" onclick="syncOutlookCalendar()">
+                <i data-lucide="refresh-cw"></i> Sync Outlook
+              </button>
+            </div>
+          </div>
+
+          <div class="upcoming-events">
+            <h4>Upcoming</h4>
+            <div id="upcomingEventsList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prospects Page -->
+    <div id="page-prospects" class="page prospects-page">
+      <div class="page-header-prospects">
+        <div>
+          <h1 class="page-title">Prospect Intelligence</h1>
+          <p class="page-description">Detailed account profiles with news feeds and outreach recommendations</p>
+        </div>
+        <button class="btn-refresh-large" onclick="refreshProspectsFeed()">
+          <i data-lucide="refresh-cw"></i> Refresh Feed
+        </button>
+      </div>
+
+      <div class="stats-bar-inline">
+        <div class="stat-inline">
+          <div class="stat-value">8</div>
+          <div class="stat-label">Total Accounts</div>
+        </div>
+        <div class="stat-inline">
+          <div class="stat-value">4</div>
+          <div class="stat-label">High Priority</div>
+        </div>
+        <div class="stat-inline">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Medium Priority</div>
+        </div>
+        <div class="stat-inline">
+          <div class="stat-value">1</div>
+          <div class="stat-label">Monitor</div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <i data-lucide="search"></i>
+          <input type="text" id="searchInput" placeholder="Search accounts, news, or triggers...">
+        </div>
+        <button class="filter-btn active" onclick="filterProspects('all')">
+          <i data-lucide="grid"></i> All
+        </button>
+        <button class="filter-btn" onclick="filterProspects('high')">
+          <i data-lucide="alert-circle"></i> High Priority
+        </button>
+        <button class="filter-btn" onclick="filterProspects('medium')">
+          <i data-lucide="info"></i> Medium Priority
+        </button>
+        <button class="filter-btn" onclick="filterProspects('low')">
+          <i data-lucide="eye"></i> Monitor
+        </button>
+      </div>
+
+      <div class="account-grid" id="accountGrid"></div>
+    </div>
+
+    <!-- Commitments Page -->
+    <div id="page-commitments" class="page commitments-page">
+      <div class="page-header-prospects">
+        <div>
+          <h1 class="page-title">My Commitments</h1>
+          <p class="page-description">Track promises, follow-ups, and action items</p>
+        </div>
+        <button class="btn-refresh-large" onclick="refreshCommitments()">
+          <i data-lucide="refresh-cw"></i> Refresh
+        </button>
+      </div>
+
+      <div class="commitments-summary">
+        <div class="summary-card">
+          <div class="summary-icon danger">
+            <i data-lucide="alert-circle"></i>
+          </div>
+          <div class="summary-content">
+            <div class="summary-value">3</div>
+            <div class="summary-label">Overdue</div>
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-icon warning">
+            <i data-lucide="clock"></i>
+          </div>
+          <div class="summary-content">
+            <div class="summary-value">7</div>
+            <div class="summary-label">Due This Week</div>
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-icon success">
+            <i data-lucide="check-circle"></i>
+          </div>
+          <div class="summary-content">
+            <div class="summary-value">12</div>
+            <div class="summary-label">Completed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="commitments-list" id="commitmentsList"></div>
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/prospects-data.js"></script>
+  <script src="scripts/commitments-data.js"></script>
+</body>
+</html>
