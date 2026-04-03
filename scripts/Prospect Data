@@ -1,6 +1,5 @@
 // Prospect Intelligence Data
 const accountsData = [
-  {
   metadata: {
     generated_date: "2026-04-03T11:00:00Z",
     total_accounts_researched: 507,
