@@ -1,14 +1,6 @@
-// ReSource Pro Carrier NCA Sales Dashboard - Prospect Data
-// Generated: April 3, 2026
-// 
-// Usage:
-// <script src="prospect-data.js"></script>
-// <script>
-//   console.log(prospectData.metadata);
-//   console.log(prospectData.prospects);
-// </script>
-
-const prospectData = {
+// Prospect Intelligence Data
+const accountsData = [
+  {
   metadata: {
     generated_date: "2026-04-03T11:00:00Z",
     total_accounts_researched: 507,
