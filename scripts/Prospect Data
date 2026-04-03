@@ -1,0 +1,385 @@
+// ReSource Pro Carrier NCA Sales Dashboard - Prospect Data
+// Generated: April 3, 2026
+// 
+// Usage:
+// <script src="prospect-data.js"></script>
+// <script>
+//   console.log(prospectData.metadata);
+//   console.log(prospectData.prospects);
+// </script>
+
+const prospectData = {
+  metadata: {
+    generated_date: "2026-04-03T11:00:00Z",
+    total_accounts_researched: 507,
+    accounts_with_news: 6,
+    high_priority_count: 4,
+    medium_priority_count: 2,
+    total_trigger_events: 24,
+    research_period: "Q2 2026"
+  },
+  
+  prospects: [
+    {
+      id: "progressive-insurance",
+      company_name: "Progressive Insurance",
+      priority: "high",
+      priority_score: 95,
+      priority_label: "HIGH PRIORITY",
+      badge_class: "badge-high",
+      news_summary: [
+        "CFO John Sauerland retiring July 3, 2026 - creating leadership transition opportunity",
+        "CEO Tricia Griffith announced AI could 'dramatically' reshape direct business (50%+ of personal lines premiums)",
+        "Accelerating AI-driven claims automation and fraud detection to reduce costs",
+        "Betting on growth without hiring through AI workforce augmentation"
+      ],
+      trigger_events: [
+        {
+          title: "CFO Transition - July 2026",
+          description: "Leadership change creating operational continuity needs during critical financial period"
+        },
+        {
+          title: "AI Transformation Initiative",
+          description: "Aggressive AI deployment across direct channel (50%+ of premiums) requires operational support"
+        },
+        {
+          title: "Claims Automation Scaling",
+          description: "Scaling automation while maintaining quality creates process management needs"
+        },
+        {
+          title: "Workforce Efficiency Drive",
+          description: "Growing without proportional hiring creates capacity pressure"
+        }
+      ],
+      business_challenges: [
+        "Leadership transition creating operational continuity risk",
+        "Scaling AI initiatives while maintaining service quality",
+        "Managing claims volumes with leaner workforce",
+        "Need for process standardization during transformation"
+      ],
+      resource_pro_alignment: [
+        "Premium Audit Services - support during CFO transition to ensure accuracy",
+        "Claim AI Fraud Detection - complement internal AI initiatives",
+        "BPM Services - handle overflow work during workforce optimization"
+      ],
+      why_now: "Progressive's CFO departure and aggressive AI transformation create immediate need for specialized operations support to maintain service levels during transition while scaling automation initiatives.",
+      outreach_message: "Congratulations on Progressive's continued leadership in AI-driven insurance innovation. As you navigate CFO John Sauerland's upcoming July transition while scaling AI transformation across your direct channel—which accounts for over 50% of personal lines premiums—operational continuity becomes paramount.\n\nReSource Pro specializes in supporting carriers during critical transitions. Our Premium Audit services ensure accuracy and consistency during leadership changes, while our Claim AI Fraud Detection solutions complement your internal AI initiatives to accelerate fraud identification and reduce loss ratios. Additionally, our Business Process Management services provide flexible capacity to handle claims volumes as you optimize workforce through AI-driven automation.\n\nWe've helped numerous carriers maintain service excellence during transformation periods, delivering measurable improvements in turnaround time, operational efficiency, and cost containment. With your aggressive AI roadmap and concurrent leadership transition, this represents an ideal opportunity to augment your team with specialized expertise.\n\nI'd welcome a brief conversation to explore how ReSource Pro can support Progressive's transformation goals while ensuring seamless operations through your CFO transition.",
+      value_props: [
+        "Premium Audit accuracy during CFO transition",
+        "Claim AI Fraud Detection to complement internal initiatives",
+        "Flexible BPM capacity for workforce optimization"
+      ],
+      target_contacts: ["CFO Office", "Claims Operations Leadership", "AI Transformation Team"],
+      call_to_action: "15-minute discovery call",
+      follow_up_date: "2026-04-07"
+    },
+    {
+      id: "kemper-corporation",
+      company_name: "Kemper Corporation",
+      priority: "high",
+      priority_score: 92,
+      priority_label: "HIGH PRIORITY",
+      badge_class: "badge-high",
+      news_summary: [
+        "CEO Joseph P. Lacher stepped down October 2025 - interim CEO C. Thomas Evans Jr. appointed",
+        "Chief Claims Officer Duane A. Sanders departed October 2025",
+        "Stock downgraded by Raymond James due to leadership uncertainty",
+        "Board conducting comprehensive CEO search while navigating operational challenges"
+      ],
+      trigger_events: [
+        {
+          title: "Dual Leadership Exits",
+          description: "Simultaneous CEO and CCO departures creating strategic uncertainty"
+        },
+        {
+          title: "CEO Search Underway",
+          description: "Comprehensive search process diverts management focus"
+        },
+        {
+          title: "Claims Leadership Vacancy",
+          description: "Chief Claims Officer gap affecting service delivery and operations"
+        },
+        {
+          title: "Analyst Downgrades",
+          description: "Market pressure from Raymond James downgrade increases scrutiny"
+        }
+      ],
+      business_challenges: [
+        "Executive leadership vacuum creating strategic uncertainty",
+        "Claims operations leadership gap affecting service delivery",
+        "Rising claims inflation in high-risk auto segment",
+        "Need to maintain digital transformation momentum during transition"
+      ],
+      resource_pro_alignment: [
+        "Claims Operations Support - fill leadership gap with expert resources",
+        "Premium Audit Services - ensure accuracy during management transition",
+        "BPM Services - stabilize operations while permanent leadership secured"
+      ],
+      why_now: "Kemper's simultaneous loss of CEO and Chief Claims Officer creates critical operational vulnerabilities and immediate need for experienced insurance operations support to prevent service degradation.",
+      outreach_message: "Kemper's recent leadership transitions—with CEO Joseph Lacher's departure and the simultaneous exit of Chief Claims Officer Duane Sanders—create unique operational challenges that demand specialized support. As Interim CEO C. Thomas Evans and your Board navigate the comprehensive CEO search, maintaining claims operations excellence and strategic momentum is critical.\n\nReSource Pro brings deep expertise in stabilizing insurance operations during leadership transitions. Our Claims Operations Support services can bridge the gap left by your Chief Claims Officer's departure, delivering experienced resources to maintain service quality and processing efficiency. Our Premium Audit services ensure continued accuracy while management attention is focused on strategic priorities. And our Business Process Management solutions provide scalable capacity to prevent service degradation during this period of change.\n\nWe've successfully partnered with multiple carriers facing similar transitions, consistently delivering improved combined ratios, reduced turnaround times, and maintained customer satisfaction scores. With your high-risk auto segment facing claims inflation and analyst scrutiny following the leadership changes, operational stability is essential.\n\nI'd value the opportunity to discuss how ReSource Pro can provide the specialized support Kemper needs during this critical transition period.",
+      value_props: [
+        "Claims operations leadership bridge resources",
+        "Premium audit continuity during management change",
+        "Scalable BPM to prevent service degradation"
+      ],
+      target_contacts: ["Interim CEO Office", "Board Search Committee", "Claims Operations"],
+      call_to_action: "Confidential discussion about transition support",
+      follow_up_date: "2026-04-07"
+    },
+    {
+      id: "selective-insurance",
+      company_name: "Selective Insurance Group",
+      priority: "high",
+      priority_score: 88,
+      priority_label: "HIGH PRIORITY",
+      badge_class: "badge-high",
+      news_summary: [
+        "Technology budget more than doubled vs. 2023 to support digital transformation",
+        "Expanding from 22 to 40 states by end of 2026 (Montana, Wyoming, others)",
+        "Deploying AI for underwriting accuracy and claims handling",
+        "Modernizing core systems for E&S and commercial lines operations"
+      ],
+      trigger_events: [
+        {
+          title: "Geographic Expansion Push",
+          description: "Entering 18 new states simultaneously by end of 2026"
+        },
+        {
+          title: "Technology Investment Surge",
+          description: "IT budget more than doubled compared to 2023 levels"
+        },
+        {
+          title: "AI Deployment Initiative",
+          description: "Scaling AI across underwriting and claims while maintaining quality"
+        },
+        {
+          title: "Core Systems Modernization",
+          description: "Upgrading E&S and commercial lines systems during expansion"
+        }
+      ],
+      business_challenges: [
+        "Managing explosive growth across 18 new states simultaneously",
+        "Scaling operations while maintaining combined ratio targets (96.5-97.5%)",
+        "Processing increased premium volume without proportional headcount growth",
+        "Ensuring quality during rapid geographic expansion"
+      ],
+      resource_pro_alignment: [
+        "BPM Services - scale operations support across new state markets",
+        "Premium Audit Services - maintain accuracy during rapid expansion",
+        "Loss Control Survey Coordination - support new market entry"
+      ],
+      why_now: "Selective's aggressive 18-state expansion within 12 months while doubling technology spend creates immediate capacity pressure requiring scalable operations support.",
+      outreach_message: "Selective's ambitious expansion from 22 to 40 states by year-end 2026—while simultaneously doubling technology investments—represents exceptional growth that requires equally exceptional operational support. Entering 18 new markets including Montana and Wyoming while deploying AI across underwriting and claims creates significant capacity demands.\n\nReSource Pro specializes in scalable operations support for rapidly expanding carriers. Our Business Process Management services provide flexible capacity across new state markets, enabling you to scale efficiently without proportional headcount increases—directly supporting your goal of handling increased premium volume while maintaining your target 96.5-97.5% combined ratio. Our Premium Audit services ensure accuracy and compliance as you navigate diverse state regulations. Additionally, our Loss Control Survey Coordination capabilities support quality market entry and risk selection.\n\nWe've helped numerous regional carriers achieve successful geographic expansion while preserving underwriting discipline and profitability metrics. With Selective's compressed timeline and parallel technology modernization initiatives, partnering with specialized operations experts can accelerate execution while mitigating operational risk.\n\nCEO John Marchioni has emphasized technology-driven efficiency gains. I'd welcome a discussion about how ReSource Pro's services complement your technology strategy and expansion objectives.",
+      value_props: [
+        "Scalable BPM for 18-state expansion",
+        "Premium audit across new regulated markets",
+        "Loss control survey coordination for quality"
+      ],
+      target_contacts: ["CEO John Marchioni", "CFO Patrick Brennan", "State Expansion Team"],
+      call_to_action: "Strategic discussion about expansion support",
+      follow_up_date: "2026-04-10"
+    },
+    {
+      id: "rli-corporation",
+      company_name: "RLI Corporation",
+      priority: "medium",
+      priority_score: 82,
+      priority_label: "MEDIUM PRIORITY",
+      badge_class: "badge-medium",
+      news_summary: [
+        "A.M. Best upgraded rating to A++ (Superior) from A+ in February 2026",
+        "Targeting mid-single-digit growth in surety, double-digit in E&S casualty",
+        "Investing heavily in AI-driven underwriting and data analytics",
+        "Expanding through delegated authority partnerships with top MGAs"
+      ],
+      trigger_events: [
+        {
+          title: "Rating Upgrade",
+          description: "A++ Superior rating from A.M. Best enables confident growth"
+        },
+        {
+          title: "Technology Investment Push",
+          description: "Heavy AI and analytics investment requiring ROI delivery"
+        },
+        {
+          title: "MGA Partnership Expansion",
+          description: "Delegated authority growth requires oversight capabilities"
+        },
+        {
+          title: "E&S Growth Initiative",
+          description: "Double-digit E&S casualty expansion targets"
+        }
+      ],
+      business_challenges: [
+        "Maintaining underwriting discipline during aggressive E&S expansion",
+        "Managing MGA relationships and delegated authority oversight",
+        "Technology ROI pressure from doubled IT investments",
+        "Balancing growth targets with combined ratio performance"
+      ],
+      resource_pro_alignment: [
+        "Premium Audit Services - support MGA oversight and accuracy",
+        "BPM Services - handle administrative load during expansion",
+        "Technology-enabled operations support for efficiency gains"
+      ],
+      why_now: "RLI's rating upgrade and capital strength position enables aggressive growth, but execution requires operational support to maintain underwriting quality.",
+      outreach_message: "Congratulations on RLI's recent A.M. Best rating upgrade to A++ (Superior)—a testament to your exceptional financial strength and underwriting discipline. As you leverage this enhanced capital position to pursue aggressive growth in E&S casualty and specialty lines while expanding delegated authority relationships with top MGAs, maintaining the underwriting quality that earned this upgrade becomes paramount.\n\nReSource Pro understands the unique challenges of scaling through MGA partnerships. Our Premium Audit services provide crucial oversight and accuracy verification across delegated authority relationships, protecting your combined ratio performance while enabling confident growth. Our Business Process Management solutions handle increased administrative workload from MGA expansion, freeing your underwriting team to focus on risk selection and relationship management. We also support the technology efficiency initiatives underlying your doubled IT investment.\n\nWith your targets of mid-single-digit growth in surety and double-digit expansion in E&S casualty, the operational demands are significant. ReSource Pro has extensive experience supporting specialty carriers pursuing disciplined growth strategies, consistently delivering improved operational efficiency while maintaining underwriting quality.\n\nI'd welcome a conversation about how ReSource Pro can support RLI's growth ambitions while preserving the underwriting excellence that earned your Superior rating.",
+      value_props: [
+        "Premium audit for MGA oversight",
+        "BPM for administrative scaling",
+        "Support for technology efficiency initiatives"
+      ],
+      target_contacts: ["Executive Team", "E&S Division Leadership", "MGA Relations"],
+      call_to_action: "Discussion about supporting disciplined growth",
+      follow_up_date: "2026-04-14"
+    },
+    {
+      id: "amtrust-financial",
+      company_name: "AmTrust Financial Services",
+      priority: "medium",
+      priority_score: 75,
+      priority_label: "MEDIUM PRIORITY",
+      badge_class: "badge-medium",
+      news_summary: [
+        "Completed $158M acquisition of Warranty Solutions from Wells Fargo",
+        "Deploying AI agents for personal injury claims automation",
+        "Partnering with digital workforce providers for claims processing",
+        "Expanding warranty and extended service offerings"
+      ],
+      trigger_events: [
+        {
+          title: "Warranty Solutions Acquisition",
+          description: "$158M acquisition requiring integration expertise"
+        },
+        {
+          title: "Claims AI Deployment",
+          description: "Scaling AI agents across personal injury claims"
+        },
+        {
+          title: "Digital Workforce Integration",
+          description: "Managing technology vendor partnerships and integration"
+        },
+        {
+          title: "Service Line Expansion",
+          description: "Broadening warranty and service product portfolio"
+        }
+      ],
+      business_challenges: [
+        "Integrating $158M acquisition while maintaining service quality",
+        "Scaling claims automation across new product lines",
+        "Managing technology vendor relationships",
+        "Ensuring consistent customer experience during transformation"
+      ],
+      resource_pro_alignment: [
+        "BPM Services - support acquisition integration workload",
+        "Claims operations support during AI scaling",
+        "Premium Audit Services for expanded warranty products"
+      ],
+      why_now: "AmTrust's large acquisition and claims automation push create integration challenges requiring specialized operations support.",
+      outreach_message: "AmTrust's $158 million acquisition of Warranty Solutions from Wells Fargo represents significant strategic expansion into extended warranty services. As you integrate this substantial acquisition while simultaneously deploying AI agents for personal injury claims processing, the operational complexity demands specialized support to ensure successful execution.\n\nReSource Pro brings proven integration expertise to insurance operations. Our Business Process Management services provide flexible capacity to handle the increased workload during acquisition integration, preventing service disruption to existing customers while onboarding Warranty Solutions operations. Our Premium Audit services ensure accuracy across your expanded warranty product portfolio, critical for proper pricing and reserving. Additionally, our claims operations support complements your AI deployment initiatives, providing experienced resources during technology scaling.\n\nWe've supported numerous carriers through successful acquisitions and technology transformations, consistently delivering improved integration timelines and maintained service quality metrics. With AmTrust's dual focus on M&A execution and claims automation advancement, partnering with operations specialists can accelerate value realization while managing integration risk.\n\nI'd value the opportunity to discuss how ReSource Pro can support your integration objectives and claims transformation initiatives.",
+      value_props: [
+        "BPM for acquisition integration capacity",
+        "Premium audit for expanded warranty products",
+        "Claims support during AI scaling"
+      ],
+      target_contacts: ["Integration Team", "Claims Technology Leadership", "Operations"],
+      call_to_action: "Integration support discussion",
+      follow_up_date: "2026-04-17"
+    },
+    {
+      id: "acceptance-insurance",
+      company_name: "Acceptance Insurance",
+      priority: "monitor",
+      priority_score: 68,
+      priority_label: "MONITOR",
+      badge_class: "badge-monitor",
+      news_summary: [
+        "Formally integrated into Confie family of brands (1,250+ store network)",
+        "Launched NASCAR sponsorship with Andrés Pérez de Lara for 2026 season",
+        "Expanding retail presence across 13 states",
+        "Focus on affordable non-standard auto insurance solutions"
+      ],
+      trigger_events: [
+        {
+          title: "Confie Integration",
+          description: "Post-acquisition brand and operational alignment"
+        },
+        {
+          title: "Brand Visibility Campaign",
+          description: "High-profile NASCAR sponsorship investment"
+        },
+        {
+          title: "Store Network Expansion",
+          description: "Scaling retail operations to 1,250+ locations"
+        },
+        {
+          title: "Market Focus Refinement",
+          description: "Non-standard auto portfolio management"
+        }
+      ],
+      business_challenges: [
+        "Post-acquisition integration and brand alignment",
+        "Scaling retail operations across store network",
+        "Managing non-standard auto risk portfolio",
+        "Maintaining operational efficiency during expansion"
+      ],
+      resource_pro_alignment: [
+        "BPM Services - support retail operations scaling",
+        "Premium Audit Services for non-standard auto segment",
+        "Claims support for retail network"
+      ],
+      why_now: "Acceptance's integration into Confie and store expansion create operational scaling needs.",
+      outreach_message: "Congratulations on Acceptance Insurance's integration into the Confie family of brands and the expansion of your retail presence to over 1,250 stores nationwide. As you scale operations across your 13-state footprint while managing non-standard auto risk portfolios, operational efficiency across a distributed retail network becomes increasingly important.\n\nReSource Pro specializes in supporting retail insurance operations at scale. Our Business Process Management services provide consistent support across multi-location networks, enabling standardized processes while accommodating regional variations. Our Premium Audit services are particularly valuable for non-standard auto portfolios, ensuring accurate risk assessment and appropriate pricing. Additionally, our claims support capabilities can enhance consistency across your retail network.\n\nThe combination of post-acquisition integration, retail expansion, and non-standard auto market focus creates operational complexity that specialized support can address. We've helped numerous carriers achieve operational excellence across distributed networks while maintaining profitability in challenging market segments.\n\nAs Acceptance continues to grow under the Confie umbrella, I'd welcome a conversation about how ReSource Pro can support your retail operations scaling and market expansion objectives.",
+      value_props: [
+        "BPM for retail network scaling",
+        "Premium audit for non-standard auto",
+        "Claims consistency across locations"
+      ],
+      target_contacts: ["Confie Leadership", "Acceptance Operations Team"],
+      call_to_action: "Exploratory conversation",
+      follow_up_date: "2026-04-21"
+    }
+  ],
+  
+  summary_statistics: {
+    total_researched: 507,
+    with_recent_news: 6,
+    high_priority: 4,
+    medium_priority: 2,
+    monitor: 0,
+    total_trigger_events: 24,
+    avg_triggers_per_account: 4,
+    avg_priority_score: 83.3
+  },
+  
+  // Helper functions for filtering and sorting
+  getHighPriority: function() {
+    return this.prospects.filter(p => p.priority === 'high');
+  },
+  
+  getMediumPriority: function() {
+    return this.prospects.filter(p => p.priority === 'medium');
+  },
+  
+  getByPriorityScore: function(minScore = 0) {
+    return this.prospects.filter(p => p.priority_score >= minScore)
+                        .sort((a, b) => b.priority_score - a.priority_score);
+  },
+  
+  getProspectById: function(id) {
+    return this.prospects.find(p => p.id === id);
+  },
+  
+  getTotalTriggerEvents: function() {
+    return this.prospects.reduce((sum, p) => sum + p.trigger_events.length, 0);
+  }
+};
+
+// Export for use in module systems
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = prospectData;
+}
+
+// Make available globally
+if (typeof window !== 'undefined') {
+  window.prospectData = prospectData;
+}
