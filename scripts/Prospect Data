@@ -1,17 +1,6 @@
 // Prospect Intelligence Data
 const accountsData = [
-  metadata: {
-    generated_date: "2026-04-03T11:00:00Z",
-    total_accounts_researched: 507,
-    accounts_with_news: 6,
-    high_priority_count: 4,
-    medium_priority_count: 2,
-    total_trigger_events: 24,
-    research_period: "Q2 2026"
-  },
-  
-  prospects: [
-    {
+  {
       id: "progressive-insurance",
       company_name: "Progressive Insurance",
       priority: "high",
